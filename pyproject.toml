@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vocals"
+authors = [
+    {name = "Jesus PEREZ CUARENTA", email = "jesus.perezcuarenta@gmail.com"},
+]
+description = "A package for tracking progress of vocal skills."
+readme = "README.rst"
+requires-python = "~=3.10"
+license = "BSD-3-Clause"
+dependencies = [
+    "numpy",
+    "pandas",
+    "librosa",
+    "basic-pitch",
+    "plotly",
+    "mir-eval"
+    ]
+dynamic = ["version"]
+
+[tool.setuptools]
+py-modules = []
